@@ -92,6 +92,9 @@ class Reviewer(Mentor):
 
 
 def grades_course_students(cours):
+    '''
+    Принимает название курса и выводит среднюю оценку всех студентов за данный курс
+    '''
     grades = []
     cours_out = False
     for i in Student.persons:
@@ -109,6 +112,9 @@ def grades_course_students(cours):
 
 
 def grades_course_lecturers(cours):
+    '''
+    Принимает название курса и выводит среднюю оценку всех лекторов за данный курс
+    '''
     grades = []
     cours_out = False
     for i in Lecturer.persons:
