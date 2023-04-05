@@ -94,6 +94,7 @@ class Reviewer(Mentor):
 def grades_course_students(cours):
     '''
     Принимает название курса и выводит среднюю оценку всех студентов за данный курс
+    Если курс не в процессе изучения выводит "Курс завершен"
     '''
     grades = []
     cours_out = False
@@ -114,6 +115,7 @@ def grades_course_students(cours):
 def grades_course_lecturers(cours):
     '''
     Принимает название курса и выводит среднюю оценку всех лекторов за данный курс
+    Если курс не закреплен за лектором выводит "Курс завершен"
     '''
     grades = []
     cours_out = False
